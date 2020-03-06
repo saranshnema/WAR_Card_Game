@@ -8,3 +8,6 @@ class Card:
 
   def get_face_value(self):
     return self.__face_value
+
+  def __str__(self):
+    return '{}-{}'.format(self.__face_value, self.__suit.name)
