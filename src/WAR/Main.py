@@ -1,0 +1,34 @@
+from WAR.Game import Game
+
+
+def get_player_info():
+    player_names = []
+    while True:
+        try:
+            num_of_players = int(input("Enter number of players : "))
+            if 1 < num_of_players <= 52:
+                break
+            else:
+                print("*********Players can be in the range of 2 to 52*********")
+        except ValueError:
+            print("*********Please enter an integer value.*********")
+    for number in range(1, num_of_players + 1):
+        while True:
+            name = str(input(("Enter Player {} name : ").format(str(number)))).strip()
+            if name and name not in player_names:
+                break
+            else:
+                print("*********Please provide a valid name that has not been used*********")
+        player_names.append(name)
+    return player_names
+
+
+def main():
+    player_names = get_player_info()
+    game = Game()
+    game.create_game(player_names=player_names)
+    game.start_game()
+
+
+if __name__ == '__main__':
+    main()

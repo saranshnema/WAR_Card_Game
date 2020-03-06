@@ -15,4 +15,5 @@ class Player:
         self.hand.add_all(cards)
 
     def show_hand(self):
-        print('Player {} has {}'.format(self.name, self.hand))
+        print("Player {} have following cards - ".format(self.name))
+        print(self.hand)
