@@ -2,6 +2,11 @@ from WAR.Game import Game
 
 
 def get_player_info():
+    """
+    This method is an interactive console application that takes in input from user
+    regarding number of players in the game and their names.
+    :return: List of player names
+    """
     player_names = []
     while True:
         try:
@@ -24,6 +29,9 @@ def get_player_info():
 
 
 def main():
+    """
+    Driver method that helps populate player name and start the game.
+    """
     player_names = get_player_info()
     game = Game()
     game.create_game(player_names=player_names)
