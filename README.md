@@ -55,7 +55,7 @@ This repository contains two folder
     
 ### WAR Game
     > To start the game go to main.py and run the file
-    > This will as for Number of players.
-    > Once numbers are given then program will ask for names of each player
-    > Once the player information is given the program will simulate the WAR game and gives the winner at the end.  
+    > This will ask for Number of players.
+    > Once number is given then program will ask for names of each player
+    > Once the player information is given the program will simulate the WAR game and give the winner at the end.  
 
