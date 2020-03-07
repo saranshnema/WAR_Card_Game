@@ -42,8 +42,5 @@ def main():
         if play_again == "n":
             print("Thanks for playing.\nGoodbye :)")
             break
-
-
-
 if __name__ == '__main__':
     main()
