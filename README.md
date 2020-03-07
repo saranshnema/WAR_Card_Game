@@ -40,3 +40,22 @@ player.
   This method simulates the center part of table where game is being played. Players throw in the cards on the table. In case of a tie extra cards which are known as bonus cards are also played here.
  ### Suit
   This class maintains 4 suit of a playing card deck.
+
+## Structure
+
+This repository contains two folder 
+1) Tests
+    > This folder contains all the tests related to a given class
+2) WAR
+    > This folder contains actual code of each class
+    
+## Working
+### Tests
+    > Each test class can be run seperately by running the python file
+    
+### WAR Game
+    > To start the game go to main.py and run the file
+    > This will as for Number of players.
+    > Once numbers are given then program will ask for names of each player
+    > Once the player information is given the program will simulate the WAR game and gives the winner at the end.  
+
