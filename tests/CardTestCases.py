@@ -1,7 +1,7 @@
 import unittest
 
-from WAR.Suit import SUIT
 from WAR.Card import Card
+from WAR.Suit import SUIT
 
 
 class CardTestCases(unittest.TestCase):
