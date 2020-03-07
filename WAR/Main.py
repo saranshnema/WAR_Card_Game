@@ -32,11 +32,15 @@ def main():
     """
     Driver method that helps populate player name and start the game.
     """
-    player_names = get_player_info()
-    game = Game()
-    game.create_game(player_names=player_names)
-    game.start_game()
-
-
+    while True:
+        print("Welcome to WAR Game")
+        player_names = get_player_info()
+        game = Game()
+        game.create_game(player_names=player_names)
+        game.start_game()
+        play_again = str(input("Would you like to play again? \n If No hit N else press any key to continue - ")).lower()
+        if play_again == "n":
+            print("Thanks for playing.\nGoodbye :)")
+            break
 if __name__ == '__main__':
     main()
