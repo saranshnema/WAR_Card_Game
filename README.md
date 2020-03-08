@@ -1,6 +1,7 @@
 # WAR_Card_Game
 ## System Requirements
 War is played with standard 52 playing cards. The standard deck has 13 ranks in 4 suits.
+This project is using Python 3.7
 
 ### Background
  > To start with, the players are dealt seperate hand. Each hand has equal number of cards.
@@ -52,10 +53,12 @@ This repository contains two folder
 ## Working
 ### Tests
     > Each test class can be run seperately by running the python file
+    > Test cases are written in Python 3.7 and are running using unittest
     
 ### WAR Game
     > To start the game go to main.py and run the file
     > This will ask for Number of players.
     > Once number is given then program will ask for names of each player
     > Once the player information is given the program will simulate the WAR game and give the winner at the end.  
+    > Program is written using Python 3.7
 
