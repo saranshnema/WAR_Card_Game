@@ -62,3 +62,8 @@ This repository contains two folder
     > Once the player information is given the program will simulate the WAR game and give the winner at the end.  
     > Program is written using Python 3.7
 
+## Future Scope or what else can be done
+If i could invest more time in the application, i would create this game in a distributed fashion as in running over a server and players playing over the internet. Players could have their own accounts, an admin could be a part of this application that had the ability to view the game in real time and can make necessary changes if required. 
+I would have created a good working GUI for this game with cards, players, table and some animations. 
+Additional or new custom functionality like betting on a round can be developed.
+A scoreboard can also be introduced where a players profile will be maintained with their scores over time.
