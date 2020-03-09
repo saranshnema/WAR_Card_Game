@@ -1,6 +1,6 @@
 # WAR_Card_Game
 ## System Requirements
-War is played with standard 52 playing cards. The standard deck has 13 ranks in 4 suits.
+War is played with standard playing cards. The standard deck has 13 ranks in 4 suits.
 This project is using Python 3.7
 
 ### Background
@@ -14,7 +14,7 @@ This project is using Python 3.7
  
 ### Assumptions
   1) Player can range from 2-52
-  2) Cards are divided equally amongst players
+  2) Cards are divided equally amongst players, each player should get atleast 15 cards to avoid player running out of cards prematurely. 
   3) Player with highest valued card is the winner
   4) Player who loses all the card is no longer involved in the game
   5) All the cards won by a player goes to the end of the hand
