@@ -1,3 +1,5 @@
+import math
+
 from WAR.Deck import Deck
 from WAR.Hand import Hand
 from WAR.Player import Player
@@ -15,16 +17,30 @@ player.
 
 
 class Game:
-    def __init__(self):
+    def __init__(self, player_names):
         """
         Constructor that contains Player, playing cards and maintain round count.
         This also takes care of shuffling the cards before distribution amongst the players.
         """
+        self.player_names = player_names
         self.players = []
-        deck = Deck()
-        self.cards = deck.get_cards()
+        self.get_cards()
         shuffle(self.cards)
         self.rounds = 0
+
+    def get_cards(self):
+        player_count = len(self.player_names)
+        deck = Deck()
+        self.cards = []
+        min_cards = player_count * 15
+        if min_cards <= 52:
+            self.cards = deck.get_cards()
+        else:
+            min_deck = math.ceil(min_cards / 52)
+            while min_deck:
+                self.cards.extend(deck.get_cards())
+                min_deck -= 1
+        print(len(self.cards))
 
     def distribute_cards(self):
         """
@@ -37,14 +53,14 @@ class Game:
             for hand in hands:
                 hand.add_card(self.cards.pop())
 
-    def create_game(self, player_names):
+    def create_game(self):
         """
         This method creates the game instance by creating players, distributing
         equal cards to each player and finally showing which player got which card.
         :param player_names: Names of each player involved in the game.
         :return: None
         """
-        for name in player_names:
+        for name in self.player_names:
             self.players.append(Player(name, Hand()))
 
         self.distribute_cards()
